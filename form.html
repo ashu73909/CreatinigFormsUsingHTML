@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ChaiCode Registration</title>
+  </head>
+  <body>
+    <h1>ChaiCode Course Registration</h1>
+    <form action="success.html" method="post">
+      <table>
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" id="name" name="Name" maxlength="16" placeholder="please enter name">
+        </td>
+        </tr>
+
+        <tr>
+          <td><label for="num">Number:</label></td>
+          <td><input type="text" id="num" name="PhnN" pattern="[0-9]{10}" placeholder="required filed" title="Please enter 10 digit number" required>
+        </td>
+        </tr>
+
+        <tr>
+          <td><label for="eml">Email:</label></td>
+          <td><input type="email" id="eml" name="email"  placeholder="enter your email" title="Please use @ . field" required maxlength="50">
+        </td>
+        </tr>
+
+        <tr>
+          <td><label for="git">GithubID:</label></td>
+          <td><input type="url" id="git" name="Git" required placeholder="https://Github.com" required>
+        </td>
+        </tr>
+
+      </table><br>
+
+      <label for="file">Upload Aadhar : </label>
+      <input type="file" multiple accept=".jpg,.png,.pdf" name="GitHub ID"><br><br>
+
+      <p><b>Gender</b></p>
+      <input type="radio" name="Gender" required>Male
+      <input type="radio" name="Gender" >Female 
+      <br><br>
+
+      <label for="crs"><b>Search for courses :<b></label>
+      <input type="text" list="course" id="crs" name="courseSele" placeholder="select course">
+      <datalist id="course">
+        <option value="Data Science"></option>
+        <option value="Web D"></option>
+        <option value="Gen AI"></option>
+      </datalist>
+      <select name="selected months">
+        <option value="3 m">3 months</option>
+        <option value="6 m">6 month</option>
+        <option value="9 m">9 month </option>
+      </select><br><br>
+
+      <label for="cnty">Select country :</label>
+      <select name="country" id="cnty" required>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+      </select><br><br>
+
+      <label for="fd">How you found us : </label><br>
+      <input type="checkbox"  name="Source" value="referal">referal
+      <input type="checkbox"  name="Source" value="friend">friend
+      <input type="checkbox"  name="Source" value="Adv">Advertisment
+      <input type="checkbox"  name="Source" value="YouTube">YouTube
+      <br><br>
+
+      <label for="tst">what you liked about us</label>
+      <textarea id="tst" name="feedback" placeholder="what you loved about us" maxlength="35" title="not more than 35 words" rows="2" cols="40"></textarea>
+      <br><br>
+      <p>Revert all changes :<input type="reset"></p><br>
+      <label for="sub">Submit the form</label>
+      <button type="submit" id="sub">Submit</button>
+    
+    </form>
+  </body>
+</html>
