@@ -38,33 +38,36 @@
       </table>
       </fieldset><br>
 
-      <label for="file">Upload Aadhar : </label>
-      <input type="file" multiple accept=".jpg,.png,.pdf" name="GitHub ID"><br><br>
+      <fieldset>
+        <legend>identity & course detail</legend>
+          <label for="file">Upload Aadhar : </label>
+          <input type="file" multiple accept=".jpg,.png,.pdf" name="GitHub ID"><br><br>
 
-      <p><b>Gender</b></p>
-      <input type="radio" name="Gender" required>Male
-      <input type="radio" name="Gender" >Female 
-      <br><br>
+          <p><b>Gender</b></p>
+          <input type="radio" name="Gender" required>Male
+          <input type="radio" name="Gender" >Female 
+          <br><br>
 
-      <label for="crs"><b>Search for courses :<b></label>
-      <input type="text" list="course" id="crs" name="courseSele" placeholder="select course">
-      <datalist id="course">
-        <option value="Data Science"></option>
-        <option value="Web D"></option>
-        <option value="Gen AI"></option>
-      </datalist>
-      <select name="selected months">
-        <option value="3 m">3 months</option>
-        <option value="6 m">6 month</option>
-        <option value="9 m">9 month </option>
-      </select><br><br>
+          <label for="crs"><b>Search for courses :<b></label>
+          <input type="text" list="course" id="crs" name="courseSele" placeholder="select course">
+          <datalist id="course">
+            <option value="Data Science"></option>
+            <option value="Web D"></option>
+            <option value="Gen AI"></option>
+          </datalist>
+          <select name="selected months">
+            <option value="3 m">3 months</option>
+            <option value="6 m">6 month</option>
+            <option value="9 m">9 month </option>
+          </select><br><br>
 
-      <label for="cnty">Select country :</label>
-      <select name="country" id="cnty" required>
-        <option value="India">India</option>
-        <option value="USA">USA</option>
-        <option value="UK">UK</option>
-      </select><br><br>
+          <label for="cnty">Select country :</label>
+          <select name="country" id="cnty" required>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+          </select><br><br>
+      </fieldset>
 
       <label for="fd">How you found us : </label><br>
       <input type="checkbox"  name="Source" value="referal">referal
